@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Pregnancy Support & Prevention Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background-color: #9c27b0;
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .resource-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .footer {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #9c27b0;
+        }
+
+        .nav-pills .nav-link {
+            color: #9c27b0;
+        }
+
+        .btn-primary {
+            background-color: #9c27b0;
+            border-color: #9c27b0;
+        }
+
+        .btn-primary:hover {
+            background-color: #6a1b9a;
+            border-color: #6a1b9a;
+        }
+
+        .btn-outline-primary {
+            color: #9c27b0;
+            border-color: #9c27b0;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #9c27b0;
+            border-color: #9c27b0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Teen Support Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ask.html">Ask a Question</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">Find Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parents.html">Teen Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2">Login</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4">Your Health. Your Future. Your Choice.</h1>
+            <p class="lead mb-4">Empowering teens with knowledge, resources, and support for informed decisions.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="resources.html" class="btn btn-light btn-lg">
+                    <i class="fas fa-book me-2"></i>Learn About Prevention
+                </a>
+                <a href="support.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-hands-helping me-2"></i>Find Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Quick Access</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Education">
+                        <div class="card-body">
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text">Learn about prevention, health, and making informed decisions.</p>
+                            <a href="resources.html" class="btn btn-primary">Explore Resources</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Get Help">
+                        <div class="card-body">
+                            <h5 class="card-title">Get Help</h5>
+                            <p class="card-text">Find support services, counseling, and local resources.</p>
+                            <a href="support.html" class="btn btn-primary">Find Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Ask Anonymously">
+                        <div class="card-body">
+                            <h5 class="card-title">Ask Anonymously</h5>
+                            <p class="card-text">Get answers to your questions confidentially.</p>
+                            <a href="ask.html" class="btn btn-primary">Ask a Question</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Understanding Teen Pregnancy</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Education continuation">
+                        <div class="card-body">
+                            <h5 class="card-title">Education Continuation</h5>
+                            <p class="card-text">Learn about options for continuing your education while parenting.</p>
+                            <a href="parents.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Health care">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthcare Access</h5>
+                            <p class="card-text">Find information about healthcare services and support.</p>
+                            <a href="resources.html" class="btn btn-primary">Find Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prevention Tips -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Prevention Tips</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Education">
+                        <div class="card-body">
+                            <h5 class="card-title">Education</h5>
+                            <p>Comprehensive sexual health education is key to prevention.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Communication">
+                        <div class="card-body">
+                            <h5 class="card-title">Communication</h5>
+                            <p>Open and honest communication with trusted adults is important.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Support">
+                        <div class="card-body">
+                            <h5 class="card-title">Support</h5>
+                            <p>Access to support services and resources can help prevent teen pregnancy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Support Options</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Counseling">
+                        <div class="card-body">
+                            <h5 class="card-title">Counseling Services</h5>
+                            <p>Professional counseling and support for teens and young parents.</p>
+                            <a href="support.html" class="btn btn-primary">Find a Counselor</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card resource-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                            class="card-img-top" alt="Community">
+                        <div class="card-body">
+                            <h5 class="card-title">Community Support</h5>
+                            <p>Connect with others through support groups and community programs.</p>
+                            <a href="support.html" class="btn btn-primary">Join a Group</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Resources & Information</h2>
+
+            <ul class="nav nav-pills mb-4 justify-content-center" id="resourceTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#prevention">Prevention</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#health">Health & Wellness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#parents">For Teen Parents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#families">For Families</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="prevention">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Prevention methods">
+                                <div class="card-body">
+                                    <h4>Understanding Contraception Options</h4>
+                                    <p>Learn about different contraception methods, their effectiveness, and how to
+                                        access them.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Healthy relationships">
+                                <div class="card-body">
+                                    <h4>Healthy Relationships</h4>
+                                    <p>Understanding consent, communication, and building healthy relationships with
+                                        partners.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="health">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Physical health">
+                                <div class="card-body">
+                                    <h4>Taking Care of Your Body</h4>
+                                    <p>Physical health tips, regular check-ups, and understanding your reproductive
+                                        health.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Mental health">
+                                <div class="card-body">
+                                    <h4>Mental & Emotional Wellbeing</h4>
+                                    <p>Dealing with pressure, stress, and maintaining good mental health as a teen.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="parents">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Education continuation">
+                                <div class="card-body">
+                                    <h4>Continuing Your Education</h4>
+                                    <p>Resources for staying in school, online learning options, and childcare
+                                        assistance.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Parenting skills">
+                                <div class="card-body">
+                                    <h4>Parenting Skills & Support</h4>
+                                    <p>Learning to be a good parent, support groups, and resources for teen parents.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="families">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Supporting teens">
+                                <div class="card-body">
+                                    <h4>Supporting Your Teen</h4>
+                                    <p>How to communicate openly about reproductive health and support your teen's
+                                        decisions.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card resource-card">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop"
+                                    class="card-img-top" alt="Family counseling">
+                                <div class="card-body">
+                                    <h4>Family Counseling Resources</h4>
+                                    <p>Finding professional help and guidance for families dealing with teen pregnancy.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anonymous Q&A Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Have Questions?</h2>
+                    <p class="lead">It's normal to have questions about reproductive health, relationships, and
+                        pregnancy. Get confidential answers from healthcare professionals.</p>
+                    <p>Our team of healthcare providers and counselors are here to answer your questions privately and
+                        without judgment.</p>
+                    <button class="btn btn-primary btn-lg mt-3">Ask Anonymously</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card resource-card">
+                        <div class="card-body p-4">
+                            <h4>Recently Answered Questions</h4>
+                            <div class="mb-3 border-bottom pb-3">
+                                <h6>"How effective is emergency contraception?"</h6>
+                                <p class="text-muted small">Answered by Dr. Sarah Johnson - 2 days ago</p>
+                            </div>
+                            <div class="mb-3 border-bottom pb-3">
+                                <h6>"What should I do if I missed taking my birth control pill?"</h6>
+                                <p class="text-muted small">Answered by Dr. Michael Chen - 3 days ago</p>
+                            </div>
+                            <div>
+                                <h6>"How do I talk to my parents about getting contraception?"</h6>
+                                <p class="text-muted small">Answered by Counselor Rebecca Williams - 5 days ago</p>
+                            </div>
+                            <a href="#" class="btn btn-link mt-3">View all questions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Finder -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Find Local Resources</h2>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="resourceType" class="form-label">What are you looking for?</label>
+                                        <select class="form-select" id="resourceType">
+                                            <option selected>Choose resource type...</option>
+                                            <option>Healthcare Provider</option>
+                                            <option>Counseling Services</option>
+                                            <option>Support Groups</option>
+                                            <option>Educational Programs</option>
+                                            <option>Financial Assistance</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="location" class="form-label">Your Location</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="location"
+                                                placeholder="Enter zip code">
+                                            <button class="btn btn-primary" type="button">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Teen Health Clinic</h5>
+                            <p class="text-muted mb-3">Healthcare Provider • 2.3 miles away</p>
+                            <p>Provides confidential healthcare services, contraception, STI testing, and pregnancy
+                                testing.</p>
+                            <p><strong>Address:</strong> 123 Main St, Anytown</p>
+                            <p><strong>Phone:</strong> (555) 123-4567</p>
+                            <a href="#" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Youth Counseling Center</h5>
+                            <p class="text-muted mb-3">Counseling Services • 3.5 miles away</p>
+                            <p>Confidential counseling for teens dealing with pregnancy, relationships, and life
+                                decisions.</p>
+                            <p><strong>Address:</strong> 456 Oak Ave, Anytown</p>
+                            <p><strong>Phone:</strong> (555) 987-6543</p>
+                            <a href="#" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Teen Parent Network</h5>
+                            <p class="text-muted mb-3">Support Group • 4.1 miles away</p>
+                            <p>Support group for teen parents, offering childcare assistance, parenting classes, and
+                                peer support.</p>
+                            <p><strong>Address:</strong> 789 Elm St, Anytown</p>
+                            <p><strong>Phone:</strong> (555) 456-7890</p>
+                            <a href="#" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Community Stories</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card resource-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="/api/placeholder/80/80" class="rounded-circle me-3" alt="Profile image">
+                                <div>
+                                    <h5 class="mb-0">Jessica's Story</h5>
+                                    <p class="text-muted mb-0">Teen Parent, 18</p>
+                                </div>
+                            </div>
+                            <p>"I found out I was pregnant when I was 16. I was scared and didn't know what to do. The
+                                resources and support I found through this community helped me finish high school while
+                                learning to be a good mom. Now I'm enrolled in community college and working part-time."
+                            </p>
+                            <a href="#" class="btn btn-link p-0">Read Jessica's full story</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card resource-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="/api/placeholder/80/80" class="rounded-circle me-3" alt="Profile image">
+                                <div>
+                                    <h5 class="mb-0">Marcus's Perspective</h5>
+                                    <p class="text-muted mb-0">Teen Father, 19</p>
+                                </div>
+                            </div>
+                            <p>"When my girlfriend told me she was pregnant, I knew I wanted to be there for her and our
+                                baby. The teen fathers program helped me understand my role and responsibilities. I'm
+                                proud that I can support my family while completing my education."</p>
+                            <a href="#" class="btn btn-link p-0">Read Marcus's full story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Join the Conversation</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card resource-card">
+                        <div class="card-header bg-primary text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-facebook me-2"></i>
+                                <h5 class="mb-0">Facebook Updates</h5>
+                            </div>
+                        </div>
+                        <div class="card-body" id="facebook-feed">
+                            <!-- Facebook feed content will be loaded here -->
+                            <div class="text-center">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p>Loading Facebook feed...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card resource-card">
+                        <div class="card-header bg-info text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-twitter me-2"></i>
+                                <h5 class="mb-0">Twitter Feed</h5>
+                            </div>
+                        </div>
+                        <div class="card-body" id="twitter-feed">
+                            <!-- Twitter feed content will be loaded here -->
+                            <div class="text-center">
+                                <div class="spinner-border text-info" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p>Loading Twitter feed...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card resource-card">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4">Contact Us</h2>
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your name.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="" selected disabled>Choose a subject...</option>
+                                        <option>General Inquiry</option>
+                                        <option>Resource Information</option>
+                                        <option>Volunteer Opportunities</option>
+                                        <option>Partnership Proposal</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a subject.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please write your message.
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="confidential">
+                                    <label class="form-check-label" for="confidential">I would like my inquiry to remain
+                                        confidential</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Stay Updated</h2>
+            <p class="lead mb-4">Subscribe to our newsletter for the latest resources, events, and support information.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address" required>
+                        <button class="btn btn-light" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5>Teen Support Hub</h5>
+                    <p>Providing education, resources, and support for teens to make informed decisions about their
+                        reproductive health and future.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Education</a></li>
+                        <li><a href="#" class="text-white">Healthcare</a></li>
+                        <li><a href="#" class="text-white">Support Groups</a></li>
+                        <li><a href="#" class="text-white">Teen Parents</a></li>
+                        <li><a href="#" class="text-white">For Families</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Our Mission</a></li>
+                        <li><a href="#" class="text-white">The Team</a></li>
+                        <li><a href="#" class="text-white">Partners</a></li>
+                        <li><a href="#" class="text-white">Impact</a></li>
+                        <li><a href="#" class="text-white">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Us</h5>
+                    <address class="mb-0">
+                        <p>1234 Community Center Dr.<br>Anytown, ST 12345</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <p>Email: info@teensupporthub.org</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">© 2025 Teen Support Hub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation script
+        (() => {
+            'use strict';
+
+            // Fetch all forms we want to apply custom validation
+            const forms = document.querySelectorAll('.needs-validation');
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        // If form is valid, prevent default and show success message
+                        event.preventDefault();
+                        alert('Thank you for your submission! We will get back to you soon.');
+                        form.reset();
+                    }
+
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Resource finder functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const resourceType = document.getElementById('resourceType');
+            const locationInput = document.getElementById('location');
+            const searchButton = document.querySelector('.input-group .btn-primary');
+
+            if (searchButton) {
+                searchButton.addEventListener('click', function () {
+                    // In a real application, this would call an API with the search parameters
+                    if (locationInput.value.trim() === '') {
+                        locationInput.classList.add('is-invalid');
+                        return;
+                    }
+
+                    // For demo purposes, we'll just show an alert
+                    alert(`Searching for ${resourceType.value} near ${locationInput.value}`);
+
+                    // In a real app, you would update the results based on the API response
+                });
+            }
+
+            if (locationInput) {
+                locationInput.addEventListener('input', function () {
+                    locationInput.classList.remove('is-invalid');
+                });
+            }
+        });
+
+        // Social Media API Integration
+        class SocialMediaFeed {
+            constructor(platform) {
+                this.platform = platform;
+                this.apiKey = platform === 'facebook' ? 'YOUR_FACEBOOK_API_KEY' : 'YOUR_TWITTER_API_KEY';
+                this.posts = [];
+            }
+
+            async fetchPosts() {
+                // In a real application, this would call the actual API
+                // For demo purposes, we'll simulate an API response
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        if (this.platform === 'facebook') {
+                            resolve([
+                                {
+                                    id: 'fb1',
+                                    author: 'Teen Support Hub',
+                                    date: 'Yesterday',
+                                    content: 'Join us for our weekly virtual support group for teen parents this Thursday at 7 PM. Topics will include balancing school and parenting responsibilities.',
+                                    likes: 24,
+                                    shares: 8
+                                },
+                                {
+                                    id: 'fb2',
+                                    author: 'Teen Support Hub',
+                                    date: '3 days ago',
+                                    content: 'New resource alert! We\'ve added a comprehensive guide to contraception options with information on effectiveness, side effects, and access. Check it out on our website.',
+                                    likes: 36,
+                                    shares: 15
+                                }
+                            ]);
+                        } else {
+                            resolve([
+                                {
+                                    id: 'tw1',
+                                    author: '@TeenSupportHub',
+                                    date: '6 hours ago',
+                                    content: 'Did you know? Many schools have programs specifically designed to help teen parents complete their education. Contact your school counselor to learn what\'s available. #EducationMatters',
+                                    retweets: 12,
+                                    likes: 28
+                                },
+                                {
+                                    id: 'tw2',
+                                    author: '@TeenSupportHub',
+                                    date: '2 days ago',
+                                    content: 'Reminder: Our confidential health services are available to all teens, regardless of ability to pay. Your health is our priority. #TeenHealth #Confidential',
+                                    retweets: 18,
+                                    likes: 42
+                                }
+                            ]);
+                        }
+                    }, 500);
+                });
+            }
+
+            async displayPosts(containerId) {
+                const posts = await this.fetchPosts();
+                const container = document.getElementById(containerId);
+
+                if (!container) return;
+
+                this.posts = posts;
+
+                // Clear existing content
+                container.innerHTML = '';
+
+                // Add posts to container
+                posts.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('mb-3', 'pb-3', 'border-bottom');
+
+                    let interactionButtons = '';
+                    if (this.platform === 'facebook') {
+                        interactionButtons = `
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary">Like (${post.likes})</button>
+                <button class="btn btn-sm btn-outline-secondary">Share (${post.shares})</button>
+              </div>
+            `;
+                    } else {
+                        interactionButtons = `
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary">Retweet (${post.retweets})</button>
+                <button class="btn btn-sm btn-outline-secondary">Like (${post.likes})</button>
+              </div>
+            `;
+                    }
+
+                    postElement.innerHTML = `
+            <p class="mb-1"><strong>${post.author}</strong> • ${post.date}</p>
+            <p>${post.content}</p>
+            ${interactionButtons}
+          `;
+
+                    container.appendChild(postElement);
+                });
+
+                // Add follow button
+                const followButton = document.createElement('a');
+                followButton.href = '#';
+                followButton.classList.add('btn', 'mt-3');
+
+                if (this.platform === 'facebook') {
+                    followButton.classList.add('btn-primary');
+                    followButton.textContent = 'Follow Us on Facebook';
+                } else {
+                    followButton.classList.add('btn-info', 'text-white');
+                    followButton.textContent = 'Follow Us on Twitter';
+                }
+
+                container.appendChild(followButton);
+            }
+        }
+
+        // Initialize social media feeds
+        document.addEventListener('DOMContentLoaded', function () {
+            const facebookFeed = new SocialMediaFeed('facebook');
+            const twitterFeed = new SocialMediaFeed('twitter');
+
+            // Display feeds
+            facebookFeed.displayPosts('facebook-feed');
+            twitterFeed.displayPosts('twitter-feed');
+        });
+    </script>
+</body>
+
+</html>
